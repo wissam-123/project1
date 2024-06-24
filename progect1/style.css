@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Goldman",cursive;
+  font-size: large;
+  background-color:#f8eed3;
+  margin-top:0;  
+  }
+  
+ p{
+  font-size: x-large;
+ }
+.down{
+    
+    margin-top: 100px;  
+    margin-left: 50px;
+    width:90vw;
+   min-height:80vh;
+  }
+    /* style voor navigatiebar */
+  nav {
+    display: flex;
+    width: 100vw;
+    min-height: 10vh;
+    padding: 2rem;
+    min-height: 6vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#745910;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  ul {
+  overflow: hidden;
+ display: flex;
+ justify-content: space-around;
+
+}
+
+ nav li {
+  font-size: 2.5rem;
+  padding: 0 1em 0 1em;
+  display: inline-block;
+ }
+nav li a
+{
+  display: inline-block;
+  align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+}
+
+
+/* Change the color of the links when you hover over them */
+li.nav-item a:hover:not(.active){
+  background-color:lightgrey;
+   color: black;
+  }
+.active { 
+   background-color:#bfc129;
+}
+
+                  /* dropdown  menu */
+ .DropDown:hover .DropDownContent
+ {
+  display: flex;
+  flex-direction: column;
+  margin-left: -40.5px;
+  padding: 31px;
+  background-color:#745910;
+  position: absolute;
+ }
+ .DropDown:hover
+ {
+  background-color:#bfc129;
+  } 
+.DropDownContent
+{
+  display: none;
+}
+.DropDownMenuItem:hover
+{
+  background-color:#bfc129;
+  
+}
+     /*  style voor footer */
+.foot
+{
+  width: 100vw;
+  background-color:#745910;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+  bottom:0;
+  margin-top: 20px;
+}
+.foot .foot-link{
+  text-decoration: none;
+  color: white;
+}
+                /* everythings above is for the and nav bar */
+    /*locatiegids page*/
+ .locatiegids{
+   text-align: center;
+  border: 5px solid black;
+  border-radius:12px;
+  font-size:50px;}
+  .color-tr { background-color: rgb(204, 176, 39);
+  border: 5px solid black;
+  border-radius:12px;}
+  /* styles tabel locatiegids */
+.photo-gallery {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Add your CSS styles here */
+.photo-gallery {
+    width: 100%;
+    border-collapse: collapse;
+  }
+.photo-gallery th, .photo-gallery td {
+   padding: 10px;
+   text-align: center;}
+
+ .photo-gallery img {
+  max-width: 100%;
+  height: auto;}
+
+  .position-h{
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  .position{
+    margin-left:350px;
+  }
+                            /* homepage*/
+    .title-voorstellen{
+      display: flex;
+      justify-content: center;
+      font-size: xx-large;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 10px;
+    }
+    .flex-container1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      
+    }
+    
+    .item1 {
+       width:50%;
+       margin: 10px;
+       }
+
+       .item2{
+        margin-top: 60px;
+      
+       }
+
+     .intp{
+        border:3px solid black;
+        border-radius: 3px ;
+        width: 30em;
+        
+      }
+
+        .inth{
+          font-weight: bolder;
+         border: 3px solid  #ab9046;
+         background-color: #ab9046;
+         color: white;   
+         padding: 40px;
+         text-align: center;
+         font-size:3.0em;
+      }
+      
+      .title-2{
+        display: flex;
+        justify-content: center;
+        font-size: 2.2em;
+        font-weight: 800;
+        margin: 20px;
+        color: black;
+        border: 5px solid black;
+        border-radius: 10px;
+       
+      }
+   .contant{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+    
+  .voorstel{
+    margin-top: 100px;
+  }  
+  .voorstel.contant{
+    margin-top: 30px;
+  }
+  .project-card{
+    background-color:#fff;
+    box-shadow: 10px 5px 5px black;
+    min-height: 10em;
+    width:20em;
+    overflow: hidden;
+    border-radius: 10px;
+    transition:0.7s ease;
+  }
+  .project-card:hover{
+    transform: scale(1.1);
+  }
+  .project-img img{
+    width: 100%;
+   }
+  .info-1{
+   color: black;
+  }
+
+  .persoon{
+    display: flex;
+    justify-content:space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  .more-details{
+    text-decoration: none;
+    color:rgb(160, 43, 43);
+  }
+  .more-details:hover{
+   
+    color:rgb(239, 167, 167);
+  }
+
+              /* stage page hier onder*/
+    #specific-page {
+      background-image: url('/ouderfoto/zon.PNG');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; }  
+
+    .titel-stage{
+       font-size: xx-large;
+       font-weight: bolder;
+       color: white;  
+      }
+      
+   .flex-container{
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     justify-content: center;
+     flex-direction: row;}
+      
+      h2{color:rgb(160, 43, 43);
+        margin: 20px;
+    
+     }
+
+     .item{
+
+      margin-left: 330px;
+      color: white;
+     }
+         
+  /* Stijl voor de ict tabel */
+  table{
+  border-collapse: collapse;
+  width: 70%;
+  margin: 20px auto;
+}
+
+ th, td {
+  border: 1px solid rgb(159, 137, 86);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ead4a6;
+}
+
+tr{
+  background-color: #ddd;
+  color: black;
+}
+.flex-2container{
+  display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+ .item2 {
+  color: white;
+  width: 30em;
+  height:30em;
+  margin: 20px;
+  margin-top: 60px;
+  }
+  .item3{
+    width: 50em;
+    height:40em;
+    margin: 20px;
+    margin-top: 100px;
+  }
+ 
+      /* opleidingwijzer page*/
+  .size-ul{
+  font-size:x-large;
+}
+/* formulier page */
+ .background-img{
+  background-image: url(/ouderfoto/boek2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: cover;
+ } 
+ .formulier-text{
+  font-weight: bold;
+  color:white;
+  text-align: center;
+ }
+
+ .butten-1{
+  padding:10px;
+ }
+  .formulier{
+           display: block;
+            padding:50px;
+            border:5px solid gray;
+            width: 50%;
+            border-radius: 15px;
+            margin-left: 300px;
+          }
+       /* BSA Page */
+       .container3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+     .it1{
+     margin:30px;
+     }
+    .it2{
+      margin-top:100px ;
+      margin-bottom: -70px;
+     }
+     .it3{
+      margin-bottom: 70px;
+     }
+
+     /* ouderavond page */
+     
+     .link-box:link, .link-box:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .style{
+      background-color: white;
+     padding: 40px;
+      border: 3px solid black;
+      border-radius: 10px;
+    }
+
+    .ouderavond-card{
+      background-color:#fff;
+      box-shadow: 10px 5px 5px gray;
+      height: 25em;
+      width:15em;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 30px;
+      transition:0.7s ease;
+    }
+    .ouderavond-card:hover{
+      transform: scale(1.1);
+    }
+    
+ .title{
+  margin-top: 200px;
+
+ }
+ .card{
+  background-color: #Fff;
+  width: 15em;
+  height: 15em;
+  box-shadow: 0 5px 20px black;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  margin-top: 30px;
+  transform: 0.7s ease;
+ }
+.info-2{
+  text-align: center;
+}
+
+.info-2 h3{
+  color:rgb(160, 43, 43);
+  font-size: 1.2em ;
+  font-weight: 900;
+  margin: 50px;
+}
+       /* over ons page */
+.box{
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.contant1{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+margin-top: 30px;
+
+}

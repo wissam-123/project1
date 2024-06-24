@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formulier</title>
+</head>
+<body class="background-img">
+  <nav>
+    <ul>
+     <li> <img src="/ouderfoto/logo.png" id="logo" /> </li>
+       <li class="nav-item" ><a href="index.html"> Homepage</a></li>
+       <li class="nav-item" ><a href="locatiegids.html">locatiegids</a></li>
+       <li class="nav-item" ><a href="ouderavond.html">ouderavond</a></li>
+       <li class="nav-item" ><a href="studentensstaxtuut.html">Studentenstatuut</a></li>
+       <li class="nav-item" ><a href="canvas.html">canvas</a></li>
+       <li class="nav-item" ><a href="BSA.html">BSA</a></li>
+       <li class="nav-item"  class="DropDown">
+         <a  href="opleidingswijzer.html">opleidingswijzer</a>
+         <div class="DropDownContent">
+           <a href="stage.html"class="DropDownMenuItem" >stage</a>
+           <a href="formulier.html" class="DropDownMenuItem" >formulier</a>
+         </div>
+       </li>
+     </ul>
+  </nav>
+    <main class="down" >
+
+     <h1 class="formulier-text">zoek je een stage plek ?</h1>
+      <p class="formulier-text" >Als je hulp nodig heeft om stage plek te vinden. laat ons weten en vul het formulier in </p>
+            <form class="formulier" >
+                <label for="voornaam">Voornaam:</label>
+                <input type="text" name="voornaam"  pattern="[A-Za-z]+"
+                title="Alleen letters toegestaan" required><br>
+        
+                <label for="achternaam">Achternaam:</label>
+                <input type="text" name="achternaam"  pattern="[A-Za-z]+" 
+                title="Alleen letters toegestaan" required><br>
+        
+                <label for="geslacht">Geslacht:</label>
+                <select name="geslacht">
+                    <option value="man" selected>Man</option>
+                    <option value="vrouw">Vrouw</option>
+                   </select><br>
+        
+                <label for="straat_huisnummer">Straat met huisnummer:</label>
+                <input type="text" name="straat_huisnummer" required><br>
+        
+                <label for="postcode">Postcode:</label>
+                <input type="text" name="postcode" required><br>
+        
+                <label for="stad">Stad:</label>
+                <input type="text" name="stad" required><br>
+                
+                <label for="bsn">BSN-nummer:</label>
+                <input type="text" name="bsn" required maxlength="9" pattern="[0-9]+" 
+                title="Maximaal 9 cijfers toegestaan"><br>
+
+                <label for="student nummer ">student numer:</label>
+                <input type="text" name="student numer " required maxlength="9" pattern="[0-9]+" 
+                title="Maximaal 9 cijfers toegestaan"><br>
+        
+                <label for="school">school</label>
+                <select name="school">
+                    <option value="Albeda"> Albeda</option>
+                    <option value="TCR">TCR</option>
+                    <option value="zadkine">Zadkine</option>
+                    <option value="Eurocollege">Eurocollege</option>
+                    <option value="MFC">HTF</option>
+                </select><br>
+        
+                <label for="Begindatum">Begindatum:</label>
+                <input type="date" id="inputdate" name="inputdate"> <br>
+        
+                <label for="einddatum"> einddatum:</label>
+                <input type="date" name="einddatum" required><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" required><br>
+        
+                <label for="wachtwoord">Wachtwoord (om account aan te maken):</label>
+                <input type="password" name="wachtwoord" required><br>
+        
+              <input class="butten-1" type="submit" value="bevestigen"> <br> 
+              </form>
+
+
+
+    </main>
+    
+    </body>
+</html>
